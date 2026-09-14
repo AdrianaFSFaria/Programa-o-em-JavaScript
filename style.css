@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    }
+
+p {
+    font-size: 1rem;
+    }
+    
+body {
+   color: chocolate
+   }
+/* cor do texto identificado como "body" */
+.logotipo {
+    width: 50%;
+}
+/* percentagem da largura da tela que será ocupada pelo logótipo */
+tituloId {
+    color: green;
+}
+.titulo {
+    color: red !important;
+}
+.titulo2 {
+    color: yellow
+}
+/* os últimos 3 alteram a cor do texto identificado como "titulo". Neste caso prevaleceria o último, ou seja, amarelo. No site aparece outra cor porque está definida no código */
+h1 {
+    color: purple;
+    font-size: 50px;
+}
+/* altera a cor do texto identificado como h1. Neste caso não altera porque a cor já está definida no código e prevalece */
+.navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+/* formata o texto que está na class "navigaton" idenficados como "a" */
+a {
+    color: red;
+    text-decoration: none;
+}
+/* altera a cor do texto na categoria "a" */
+a[target="_blank"] {
+    color: blue;
+}
+/* altera a cor do texto sempre que se aplicar "target="_blank" */
+button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+/* sempre que o cursor estiver em cima do botão "enviar" o botão vai ficar azul com letras brancas eo cursos vai ser a mão */
+a[target="_blank"]::after {
+    content: " (abre em nova aba)";
+}
+/* adiciona a informação do "content" */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 60px;
+}
+/* aplicação da flexbox e respetivas características no header*/
+.form-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 60px;
+}
+/* aplicação da flexbox e respetivas características na caixa form + nav, dentro do header - permite ter a barra de pesquisa em cima dos menus, ambos alinhados com o logotipo*/
+.nav-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+/* adiciona espaço entre as opções do menu */
